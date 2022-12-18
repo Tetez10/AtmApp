@@ -20,11 +20,19 @@ namespace AspNetAtmApp.Controllers
         }
 
         // GET: Users
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchField)
         {
-              return _context.User != null ? 
-                          View(await _context.User.ToListAsync()) :
-                          Problem("Entity set 'AspNetAtmAppContext.User'  is null.");
+
+            ViewData["CurrentFilter"] = searchField;
+            var users = from u in _context.User
+                        select u;
+            if (!String.IsNullOrEmpty(searchField))
+            {
+                users = users.Where(u => u.Firstname.Contains(searchField));
+            }
+            return View(users);
+
+
         }
 
         // GET: Users/Details/5
