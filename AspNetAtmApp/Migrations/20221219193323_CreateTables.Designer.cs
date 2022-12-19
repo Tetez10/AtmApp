@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AspNetAtmApp.Migrations
 {
     [DbContext(typeof(AspNetAtmAppContext))]
-    [Migration("20221219180111_transacties")]
-    partial class transacties
+    [Migration("20221219193323_CreateTables")]
+    partial class CreateTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
