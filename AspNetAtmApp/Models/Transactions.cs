@@ -1,8 +1,12 @@
-﻿namespace AspNetAtmApp.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AspNetAtmApp.Models
 {
     public class Transactions
     {
-        public int id { get; set; }
+
+   
+        public int Transactieid { get; set; }
 
         public string firstname { get; set; }
         
