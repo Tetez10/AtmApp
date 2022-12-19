@@ -15,5 +15,9 @@ namespace AspNetAtmApp.Data
         }
 
         public DbSet<AspNetAtmApp.Models.User> User { get; set; } = default!;
+
+        public DbSet<AspNetAtmApp.Models.Admin> Admin { get; set; } = default!;
+
+        public DbSet<AspNetAtmApp.Models.Transactions> Transactions { get; set; } = default!;
     }
 }
