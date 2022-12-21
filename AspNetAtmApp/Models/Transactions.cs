@@ -6,7 +6,7 @@ namespace AspNetAtmApp.Models
     {
 
    
-        public int Transactieid { get; set; }
+        public int id { get; set; }
 
         public string firstname { get; set; }
         
