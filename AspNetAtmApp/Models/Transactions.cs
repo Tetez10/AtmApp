@@ -8,6 +8,8 @@ namespace AspNetAtmApp.Models
    
         public int id { get; set; }
 
+        public int Trid { get; set; }
+
         public string firstname { get; set; }
         
 
