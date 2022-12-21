@@ -18,12 +18,13 @@ namespace AspNetAtmApp.Models
 
         public string PhoneNumber { get; set; }
 
+        public int Trid { get; set; }
+
 
         [ForeignKey("Trid")]
 
-       
         public Transactions Transactions {get; set; }
-        public int Trid { get; set; }
+       
 
     }
 }
