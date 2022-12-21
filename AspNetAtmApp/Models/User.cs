@@ -22,7 +22,6 @@ namespace AspNetAtmApp.Models
 
 
         [ForeignKey("Trid")]
-
         public Transactions Transactions {get; set; }
        
 
